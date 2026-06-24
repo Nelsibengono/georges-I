@@ -1,0 +1,391 @@
+---
+import "../styles/style.css";
+import "../components/sections/Admission.astro";
+import "../components/sections/APropos.astro";
+import "../components/sections/Galerie.astro";
+import "../components/sections/Infrastructures.astro";
+import "../components/sections/Programmes.astro";
+import "../components/sections/VieScolaire.astro";
+import "../components/layout/Footer.astro";
+import Hero from "../components/sections/Hero.astro";
+import Programmes from "../components/sections/Programmes.astro";
+import Infrastructures from "../components/sections/Infrastructures.astro";
+import VieScolaire from "../components/sections/VieScolaire.astro";
+import APropos from "../components/sections/APropos.astro";
+import Galerie from "../components/sections/Galerie.astro";
+import Admission from "../components/sections/Admission.astro";
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Complexe Scolaire Bilingue GEORGES I - Excellence & Innovation
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="#accueil" class="logo">
+          <div class="logo-icon">
+            <img
+              src="../favicon.ico"
+              height="50px"
+              width="50px"
+              border-radius="12px"
+            />
+          </div>
+          <div class="logo-text">
+            <span class="tagline">Complexe Scolaire Bilingue</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#programmes">Programmes</a></li>
+          <li><a href="#infrastructures">Infrastructures</a></li>
+          <li><a href="#vie-scolaire">Vie scolaire</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#admission" class="btn-inscription">Inscription</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#accueil" class="mobile-link">Accueil</a>
+      <a href="#apropos" class="mobile-link">À propos</a>
+      <a href="#programmes" class="mobile-link">Programmes</a>
+      <a href="#infrastructures" class="mobile-link">Infrastructures</a>
+      <a href="#vie-scolaire" class="mobile-link">Vie scolaire</a>
+      <a href="#galerie" class="mobile-link">Galerie</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#admission" class="mobile-link btn-inscription-mobile"
+        >S'inscrire maintenant</a
+      >
+    </div>
+
+    <!-- HERO -->
+    <Hero />
+
+    <!-- À PROPOS -->
+    <APropos />
+
+    <!-- PROGRAMMES -->
+    <Programmes />
+
+    <!-- INFRASTRUCTURES -->
+    <Infrastructures />
+
+    <!-- TECHNOLOGIES -->
+    <div class="tech-banner">
+      <div class="container">
+        <div class="section-header" style="margin-bottom:40px;">
+          <div
+            class="section-badge"
+            style="background:rgba(255,255,255,0.1); color:var(--accent);"
+          >
+            <i class="fas fa-microchip"></i> Technologies
+          </div>
+          <h2 style="color:var(--white);">
+            L'Innovation au Service de l'Éducation
+          </h2>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item animate-on-scroll">
+            <div class="tech-icon"><i class="fas fa-wifi"></i></div>
+            <h4>Wi-Fi Campus</h4>
+            <p>Connexion haut débit dans tout l'établissement</p>
+          </div>
+          <div class="tech-item animate-on-scroll">
+            <div class="tech-icon"><i class="fas fa-chart-line"></i></div>
+            <h4>Suivi Numérique</h4>
+            <p>Suivi des performances en temps réel</p>
+          </div>
+          <div class="tech-item animate-on-scroll">
+            <div class="tech-icon"><i class="fas fa-video"></i></div>
+            <h4>Vidéosurveillance</h4>
+            <p>Sécurité renforcée 24h/24</p>
+          </div>
+          <div class="tech-item animate-on-scroll">
+            <div class="tech-icon"><i class="fas fa-laptop"></i></div>
+            <h4>Ordinateurs</h4>
+            <p>Programme de disponibilté d'ordinateurs individuels</p>
+          </div>
+          <div class="tech-item animate-on-scroll">
+            <div class="tech-icon"><i class="fas fa-tint"></i></div>
+            <h4>Hygiène et Salubrité</h4>
+            <p>
+              18 Salles de Toilette Modernes avec désinfectant et savonnerie
+              disponibles.
+              <br />Nettoyage permanent, eau potable disponible, restaurant et
+              cantine et alimentation très sélective
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIE SCOLAIRE -->
+    <VieScolaire />
+
+    <!-- ADMISSION -->
+    <Admission />
+
+    <!-- GALERIE -->
+    <Galerie/>
+  </body>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Prêt à offrir le meilleur avenir à votre enfant ?</h2>
+      <p>
+        Rejoignez le Complexe Scolaire Bilingue GEORGES I et faites le choix de
+        l'excellence, de l'innovation et de la réussite.
+      </p>
+      <div class="cta-buttons">
+        <a href="#admission" class="btn btn-primary"
+          ><i class="fas fa-graduation-cap"></i> S'inscrire maintenant</a
+        >
+        <a href="#contact" class="btn btn-outline"
+          ><i class="fas fa-phone"></i> Nous contacter</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-badge"><i class="fas fa-envelope"></i> Contact</div>
+        <h2>Contactez-Nous</h2>
+        <p>
+          Nous sommes à votre disposition pour toute information. N'hésitez pas
+          à nous joindre.
+        </p>
+      </div>
+      <div class="contact-grid animate-on-scroll">
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Adresse</h4>
+          <p>Nkolnda, Yaoundé<br />Cameroun</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-phone-alt"></i></div>
+          <h4>Téléphone</h4>
+          <p>
+            +237 698 03 63 44<br />+237 221 61 18 80 <br /> +237 678 14 88 02
+          </p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+          <h4>Email</h4>
+          <p>complexescolairegeorges1@gmail.co</p>
+        </div>
+      </div>
+      <div class="contact-map animate-on-scroll">
+        <h3>Notre Localisation</h3>
+        <p>
+          Retrouvez-nous à Nkolnda, une zone accessible et en développement de
+          Yaoundé.
+        </p>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.640277873523!2d11.58334467586523!3d3.861749848560113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf7b718503b9%3A0x67a840611e9f451f!2sComplexe%20Scolaire%20Bilingue%20Georges%20I!5e0!3m2!1sfr!2scm!4v1716382000000!5m2!1sfr!2scm"
+            width="100%"
+            height="300"
+            style="border:0; border-radius: 8px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        <div class="map-info">
+          <span
+            ><i class="fas fa-location-dot"></i> Complexe Scolaire Bilingue GEORGES
+            I</span
+          >
+          <small>Nkolnda, Yaoundé — Cameroun</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <img
+                src="../favicon.ico"
+                height="50px"
+                width="50px"
+                border-radius="12px"
+              />
+            </div>
+            <span class="name">Complexe Scolaire Bilingue GEORGES I</span>
+          </div>
+          <p>
+            Former les leaders de demain dans un cadre d'excellence,
+            d'innovation et de discipline. Un établissement privé laïc bilingue
+            au service de l'éducation camerounaise.
+          </p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/237698036344"
+              ><i class="fab fa-whatsapp"></i></a
+            >
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Liens Rapides</h4>
+          <ul>
+            <li>
+              <a href="#accueil"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> Accueil</a
+              >
+            </li>
+            <li>
+              <a href="#apropos"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> À propos</a
+              >
+            </li>
+            <li>
+              <a href="#programmes"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> Programmes</a
+              >
+            </li>
+            <li>
+              <a href="#infrastructures"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> Infrastructures</a
+              >
+            </li>
+            <li>
+              <a href="#galerie"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> Galerie</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nos Cycles</h4>
+          <ul>
+            <li>
+              <a href="#programmes"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> Maternel</a
+              >
+            </li>
+            <li>
+              <a href="#programmes"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> Primaire
+                FR</a
+              >
+            </li>
+            <li>
+              <a href="#programmes"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> Primaire
+                EN</a
+              >
+            </li>
+            <li>
+              <a href="#programmes"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> Secondaire
+                FR</a
+              >
+            </li>
+            <li>
+              <a href="#programmes"
+                ><i class="fas fa-chevron-right" style="font-size:10px;"></i> Secondaire
+                EN</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fas fa-map-marker-alt" style="font-size:12px;"></i> Nkolnda,
+                Yaoundé</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-phone" style="font-size:12px;"></i> +237 698 03
+                63 44</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-envelope" style="font-size:12px;"></i> complexescolairegeorges1@gmail.com
+                <br /> BP 1469 YAOUNDE</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-clock" style="font-size:12px;"></i> Lun - Ven :
+                7h - 17h</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Complexe Scolaire Bilingue GEORGES I — Tous droits
+          réservés. | Discipline • Excellence • Innovation
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal">
+      <div class="modal-icon"><i class="fas fa-check"></i></div>
+      <h3>Pré-inscription envoyée !</h3>
+      <p>
+        Merci pour votre intérêt. Notre équipe vous contactera dans les 48
+        heures pour la suite du processus d'inscription.
+      </p>
+      <button class="modal-close" id="modalClose">Compris</button>
+    </div>
+  </div>
+  <script>
+    import "../scripts/script.js";
+  </script>
+</html>
